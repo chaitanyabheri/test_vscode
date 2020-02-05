@@ -5,6 +5,6 @@ python3 -m venv venv
 
 pip install requests
 
-Sort for code -->
+Sort for code -->pip install pylint
 
-pip install pylint
+rename terminal --> 
