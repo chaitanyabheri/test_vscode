@@ -8,3 +8,7 @@ pip install requests
 Sort for code -->pip install pylint
 
 rename terminal --> 
+
+
+Git Notes --> adding a origin
+git remote add  origin https://github.com/chaitanyabheri/test_vscode.git
