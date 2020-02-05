@@ -1,0 +1,35 @@
+{   "Id": "Policy1580852987770",
+    "Version": "2012-10-17",
+    "Statement": 
+    [
+        {
+            "Sid": "DS626",
+            "Effect": "Allow",
+            "Principal": {"AWS":"arn:aws:iam::220696059325::role/service-role/rds-s3-export-role-cb"},
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": [
+                "arn:aws:s3:::*"
+            ]
+        },
+        {
+            "Sid": "DS626",
+            "Principal": {"AWS":"arn:aws:iam::220696059325::role/service-role/rds-s3-export-role-cb"},
+            "Effect": "Allow",
+            "Action": [                "s3:PutObject*",
+                "s3:GetObject*",
+                "s3:DeleteObject*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::cb-rds-export-dev",
+                "arn:aws:s3:::cb-rds-export-dev/*"
+            ]
+   
+            
+        } 
+         
+ 
+    ]
+}

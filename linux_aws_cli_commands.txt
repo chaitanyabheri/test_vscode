@@ -1,0 +1,10 @@
+pwd --> shows dir
+
+create virtual env
+python3 -m venv venv
+
+pip install requests
+
+Sort for code -->
+
+pip install pylint
